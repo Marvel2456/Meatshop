@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+
+<head>
+   <meta charset="utf-8" />
+   <title>Decutz Shop |{% block title %} {% endblock %}</title>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <!--Template style -->
+   <link rel="stylesheet" type="text/css" href="{% static 'assets/css/animate.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'assets/css/animate.min.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'assets/css/fonts.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'assets/css/magnific-popup.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'assets/css/owl.carousel.min.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'assets/css/owl.theme.default.min.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'assets/css/tabs.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'assets/css/responsive.css' %}" />
+   <!--favicon-->
+   <link rel="shortcut icon" type="image/png" href="{% static 'assets/images/log.png' %}" />
+</head>
+
+<body>
+    <!-- top to return -->
+    <a href="javascript:;" id="return-to-top" class="change-bg2"> <i class="fas fa-angle-double-up"></i></a>
+
+    {% include 'partials/_navbar.html' %}
+        {% block content %}
+
+        {% endblock content %}
+    {% include 'partials/_footer.html' %}
+
+
+</body>
+
+<script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/wow.js' %}" ></script>
+<script src="{% static 'assets/js/counter.js' %}"></script>
+<script src="{% static 'assets/js/tesi.js' %}"></script>
+<script src="{% static 'assets/js/testi.js' %}"></script>
+<script src="{% static 'assets/js/tabs.js' %}"></script>
+<script src="{% static 'assets/js/jquery.magnific-popup.js' %}"></script>
+<script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/js/custom.js' %}"></script>
+
+<!-- custom js-->
+<script>
+   new WOW().init();
+</script>
+<!-- tabs -->
+<script>
+   function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+         tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+         tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+   }
+
+   // Get the element with id="defaultOpen" and click on it
+   document.getElementById("defaultOpen").click();
+</script>
+</body>
+
+</html>

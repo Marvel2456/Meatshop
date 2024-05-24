@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} {% endblock title %}
+
+{% block content %}
+<!-- banner section start start-->
+<div class="index1-slider-wrapper float_left ptb-100">
+    <div class="container">
+       <div class="slider-caption wow fadeInUp" data-wow-delay="0.1s">
+          <h4>Organic Meat and Sustainable Sea Food for You</h4>
+          <a class="custom-btn" href="#" style="background-color:#6282B1;"> Shop Now </a>
+       </div>
+       
+    </div>
+ </div>
+ <!-- banner section start end-->
+ <div class="about-sec-wrapper float_left ptb-100">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+             <div class="about-img float_left">
+                <img src="{% static 'assets/images/abm.jpg' %}" alt="img">
+             </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+             <div class="about-text float_left">
+                <h4>About Decutzshop</h4>
+                <p>we are committed to total transparency about our products.</p><br/>
+             </div>
+             
+             <div class="div_p">
+                <p>Nunc elementum purus vel ex iaculis eleifend. Curabitur bibendum odio dui, at placerat
+                   antperer vitae. In hac habitasse platea dictumst. Phasellus nec sodales enim. Mauris malesuada
+                   nulla
+                   hole enim, nec eleifend lacus vulputate ut. Sed eu diam tellus. Sed feugiat, risus ut porta iaculis
+                   mauris metus volutpat metus, vitae egestas nibh neque vulputate libero.
+                </p>
+                <br>
+                <p>Nunc elementum purus vel ex iaculis eleifend. Curabitur bibendum odio dui, at placerat
+                   antperer vitae. In hac habitasse platea dictumst. Phasellus nec sodales enim. Mauris malesuada
+                   nulla
+                   hole enim, nec eleifend lacus vulputate ut. Sed eu diam tellus. Sed feugiat, risus ut porta iaculis
+                   mauris metus volutpat metus, vitae egestas nibh neque vulputate libero.
+                </p>
+                <a class="custom-btn" href="about-us.html" style="background-color:#6282B1;">Read More</a>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ <div class="home-delivery-sec-wrapper float_left">
+    <div class="container">
+       <div class="heading-title">
+          <h4>Home Delivery</h4>
+          <p>know about our delivery processes</p>
+          <img class="img-fluid" src="{% static 'assets/images/line-yal.png' %}" alt="img">
+       </div>
+       <div class="delivery-main-wrapper">
+          <div class="delivery-box">
+             <img src="images/icon01.png" alt="img">
+             <h4> Choose </h4>
+             <p>Nunc elementum purus ex iaculis elfend. Curabitur bibendum odio</p>
+          </div>
+          <div class="delivery-box">
+             <img src="images/icon02.png" alt="img">
+             <h4> Recieve </h4>
+             <p>Aunc elementum purus ex iaculis elfend. Curabitur bibendum odio</p>
+          </div>
+          <div class="delivery-box">
+             <img src="images/icon03.png" alt="img">
+             <h4> Cook </h4>
+             <p>Nunc elementum purus ex iaculis elfend. Curabitur bibendum odio</p>
+          </div>
+          <div class="delivery-box arro-remove">
+             <img src="images/icon04.png" alt="img">
+             <h4> Eat </h4>
+             <p>Aunc elementum purus ex iaculis elfend. Curabitur bibendum odio</p>
+          </div>
+       </div>
+    </div>
+ </div>
+{% endblock content %}
