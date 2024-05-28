@@ -9,23 +9,16 @@
                 <div class="row">
                    <div class="col-md-9 col-sm-9 col-xs-6">
                       <ul class="contact-details">
-                         <li class="hidden-xs"><a href="#">Family Butchers Est. 1901</a>
+                         <li class="hidden-xs"><a href="#">Decutz Meatshop Est. 2024</a>
                          </li>
-                         <li><a href="#"><i class="fa fa-phone"></i> <b>+1 800 123 4567</b> (Open Right Now)</a>
+                         <li><a href="#"><i class="fa fa-phone"></i> <b>+234 906 377 0844</b> (Open Right Now)</a>
                          </li>
                          <li class="hidden-xs"><a href="#"><i
-                                  class="fa fa-paper-plane-o"></i>&nbsp;&nbsp;hello@example.com</a>
+                                  class="fa fa-paper-plane-o"></i>&nbsp;&nbsp;support@decutzshop.com</a>
                          </li>
                       </ul>
                    </div>
-                   <div class="col-md-3 col-sm-3 col-xs-6">
-                      <ul class="social-list">
-                         <li>
-                            <a href="login.html"><i class="fa fa-user" aria-hidden="true"></i>
-                               Login</a>
-                         </li>
-                      </ul>
-                   </div>
+                   
                 </div>
              </div>
           </div>
@@ -41,91 +34,19 @@
                       <nav class="navbar navbar-expand-lg">
                          <ul class="navbar-nav">
                             <li class="nav-item  menu-click5 ps-rel">
-                               <a class="nav-link" href="javascript:;">Home <span><i
-                                        class="fas fa-chevron-down"></i></span></a>
-                               <ul class="dropdown-items menu-open5">
-                                  <li><a href="index.html"> Home 01</a></li>
-                                  <li><a href="index2.html"> Home 02</a></li>
-                               </ul>
+                               <a class="nav-link" href="{% url 'home' %}">Home <span></span></a>
+                               
                             </li>
                             <li class="nav-item">
-                               <a class="nav-link" href="about-us.html">About</a>
-                            </li>
-
-                            <li class="nav-item menu-click4 ps-rel">
-                               <a class="nav-link" href="javascript:;">Shortcodes
-                                  <span><i class="fas fa-chevron-down"></i></span>
-                               </a>
-                               <ul class="dropdown-items menu-open4">
-                                  <li class="megamenu-wrapper">
-                                     <div class="megamenu-list">
-                                        <h5>Shortcode (1)</h5>
-                                        <a href="accordion.html">Accordian</a>
-                                        <a href="client.html">Client</a>
-                                        <a href="counter.html">Counter</a>
-                                        <a href="form.html">Form</a>
-                                        <a href="gallery.html">Gallery</a>
-                                     </div>
-                                     <div class="megamenu-list">
-                                        <h5>Shortcode (2)</h5>
-                                        <a href="alert.html">Alert</a>
-                                        <a href="icon.html">Icon</a>
-                                        <a href="list.html">List</a>
-                                        <a href="pricing.html">Pricing</a>
-                                        <a href="social-icon.html">Social Icon</a>
-                                     </div>
-                                     <div class="megamenu-list">
-                                        <h5>Shortcode (3)</h5>
-                                        <a href="button.html">Button</a>
-                                        <a href="tab.html">Tabs</a>
-                                        <a href="team.html">Team</a>
-                                        <a href="testimonial.html">Testimonial</a>
-                                     </div>
-                                  </li>
-                               </ul>
-                            </li>
-
-                            <li class="nav-item menu-click3 ps-rel">
-                               <a class="nav-link" href="javascript:;">Shop <span><i
-                                        class="fas fa-chevron-down"></i></span></a>
-                               <ul class="dropdown-items menu-open3">
-                                  <li><a href="product.html">Product</a></li>
-                                  <li><a href="product-left-sidebar.html">Product Left Sidebar</a></li>
-                                  <li><a href="product-right-sidebar.html">Product Right Sidebar</a></li>
-                                  <li><a href="product-single.html"> Product Single</a></li>
-                                  <li><a href="checkout.html"> Checkout</a></li>
-                               </ul>
-                            </li>
-                            <li class="nav-item menu-click ps-rel">
-                               <a class="nav-link" href="javascript:;">Blog
-                                  <span><i class="fas fa-chevron-down"></i></span>
-                               </a>
-                               <ul class="dropdown-items menu-open">
-                                  <li>
-                                     <a href="javascript:;">Blog Category <span><i
-                                              class="fas fa-chevron-right"></i></span></a>
-                                     <ul class="sub-dropdown">
-                                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                     </ul>
-                                  </li>
-                                  <li>
-                                     <a href="javascript:;">Blog Single <span><i
-                                              class="fas fa-chevron-right"></i></span></a>
-                                     <ul class="sub-dropdown">
-                                        <li><a href="blog-single-left-sidebar.html">Blog Single Left Sidebar</a></li>
-                                        <li><a href="blog-single-right-sidebar.html">Blog Single Right Sidebar</a>
-                                        </li>
-
-                                     </ul>
-                                  </li>
-                               </ul>
+                               <a class="nav-link" href="{% url 'about' %}">About</a>
                             </li>
                             <li class="nav-item">
-                               <a class="nav-link" href="store.html">Store</a>
-                            </li>
-
-                            
+                              <a class="nav-link" href="{% url 'products' %}">Products</a>
+                           </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                           </li>
+                         
                          </ul>
                       </nav>
                    </div>
@@ -167,34 +88,12 @@
           <div id='cssmenu'>
              <ul class="float_left">
                 <li class="has-sub">
-                   <a href="">Home</a>
-                   <ul>
-                      <li><a href="index.html">Home 01</a></li>
-                      <li><a href="index2.html">Home 02</a></li>
-                   </ul>
+                   <a href="{% url 'home' %}">Home</a>  
                 </li>
-                <li><a href="about-us.html">about</a></li>
-
-                <li class="has-sub">
-                   <a href="">Shop</a>
-                   <ul>
-                      <li><a href="product.html">Product</a></li>
-                      <li><a href="product-left-sidebar.html">Product Left Sidebar</a></li>
-                      <li><a href="jproduct-right-sidebar.html">Product Right Sidebar</a></li>
-                      <li><a href="product-single.html">Product Single</a></li>
-                      <li><a href="checkout.html">Checkout</a></li>
-                   </ul>
-                </li>
-                <li class="has-sub">
-                   <a href="">Blog</a>
-                   <ul>
-                      <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                      <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                      <li><a href="blog-single-left-sidebar.html">Blog Single Left Sidebar</a></li>
-                      <li><a href="blog-single-right-sidebar.html">Blog Single Right Sidebar</a></li>
-                   </ul>
-                </li>
-                <li class="border-none"><a href="store.html">Store</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'products' %}">Products</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                
              </ul>
           </div>
        </div>
