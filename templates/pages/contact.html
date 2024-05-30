@@ -10,8 +10,7 @@
           <h4>Contact Us</h4>
        </div>
        <ol class="breadcrumb sicon">
-          <li><a href="">Home</a></li>
-          <li><a href="">Page</a></li>
+          <li><a href="{% url 'home' %}">Home</a></li>
           <li class="active">Contact Us</li>
        </ol>
        
@@ -23,27 +22,11 @@
     <div class="container">
        <div class="mission-main-box">
           <div class="mission-inner">
-             <div class="mission-img">
+             {% comment %} <div class="mission-img">
                 <img src="{% static 'assets/images/product/shop1.png' %}" alt="img">
-             </div>
-             <h5>Shop 1</h5>
-             <p>PO Box 16122 Collins Street West <br> Victoria 8007 Australia </p>
-
-          </div>
-          <div class="mission-inner">
-             <div class="mission-img">
-                <img src="images/product/shop2.png" alt="img">
-             </div>
-             <h5>Shop 2</h5>
-             <p>34, Mahaweer Nagar, Kalani Bag <br> Dewas, M.P., 455001 India</p>
-
-          </div>
-          <div class="mission-inner">
-             <div class="mission-img">
-                <img src="images/product/shop3.png" alt="img">
-             </div>
-             <h5>Shop 3</h5>
-             <p>121 King Street, Melbourne <br> Victoria 3000 Australia </p>
+             </div> {% endcomment %}
+             <h5 style="color:#6282B1;">Our Office Address</h5>
+             {% comment %} <p>PO Box 16122 Collins Street West <br> Victoria 8007 Australia </p> {% endcomment %}
 
           </div>
        </div>
@@ -59,34 +42,7 @@
                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                 </div>
                 <div class="r-text">
-                   <h4> <a href="javascript:;">Sydney</a> </h4>
-                </div>
-             </div>
-             <!--  -->
-             <div class="request-list">
-                <div class="r-list">
-                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                </div>
-                <div class="r-text">
-                   <h4> <a href="javascript:;">Melbourne</a> </h4>
-                </div>
-             </div>
-             <!--  -->
-             <div class="request-list">
-                <div class="r-list">
-                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                </div>
-                <div class="r-text">
-                   <h4> <a href="javascript:;">Adelaide</a> </h4>
-                </div>
-             </div>
-             <!--  -->
-             <div class="request-list">
-                <div class="r-list">
-                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                </div>
-                <div class="r-text">
-                   <h4> <a href="javascript:;">Brisbane</a> </h4>
+                   <h4> <a href="javascript:;">Benin</a> </h4>
                 </div>
              </div>
           </div>
@@ -95,56 +51,6 @@
                 <iframe style="pointer-events: none;"
                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25215.625657884106!2d144.956637!3d-37.81456500000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4e793770d3%3A0x9e44d6ad0d76ba7c!2s121+King+St%2C+Melbourne+VIC+3000%2C+Australia!5e0!3m2!1sen!2sus!4v1435061406583"
                    allowfullscreen=""></iframe>
-             </div>
-             <div class="map-part">
-                <div class="half-img">
-                   <img src="images/side.png" alt="img">
-                </div>
-                <div class="right-map">
-                   <h4>Map Location</h4>
-                   <p>we are committed to total transparency about our products.</p>
-                   <img src="images/line-yal.png" alt="img">
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
- </div>
-
- <div class="delivery-way float_left ptb-100">
-    <div class="container">
-       <div class="row">
-          <div class="col-lg-4 col-md-6 col-12">
-             <div class="delivery-box">
-                <div class="delivey-icon">
-                   <img src="images/product/frozen-food.png" alt="img">
-                </div>
-                <div class="delivery-text">
-                   <h4>Frozen Saftey</h4>
-                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
-                </div>
-             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-12">
-             <div class="delivery-box">
-                <div class="delivey-icon">
-                   <img src="images/product/delivery-truck.png" alt="img">
-                </div>
-                <div class="delivery-text">
-                   <h4>Shipping Overall</h4>
-                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
-                </div>
-             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-12">
-             <div class="delivery-box">
-                <div class="delivey-icon">
-                   <img src="images/product/ecological.png" alt="img">
-                </div>
-                <div class="delivery-text">
-                   <h4>Eco Friendly</h4>
-                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
-                </div>
              </div>
           </div>
        </div>
@@ -158,22 +64,12 @@
              <div class="logo-white">
                 <img src="images/white-logo.png" alt="logo">
              </div>
-
              <div class="request-list">
                 <div class="r-list">
                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                 </div>
                 <div class="r-text">
-                   <h4>PO Box 16122 Collins Street <br /> West Victoria 8007</h4>
-                </div>
-             </div>
-             <!--  -->
-             <div class="request-list">
-                <div class="r-list">
-                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                </div>
-                <div class="r-text">
-                   <h4> 121 King Street, Melbourne <br /> Victoria 3000</h4>
+                   <h4> 14 AKUGBE STR, OPPOSITE UWA MARKET, OFF TV ROAD <br /> BENIN CITY</h4>
                 </div>
              </div>
              <!--  -->
@@ -182,7 +78,7 @@
                    <i class="fa fa-phone" aria-hidden="true"></i>
                 </div>
                 <div class="r-text">
-                   <h4> +1 800 123 4567</h4>
+                   <h4> +234 906 377 0844</h4>
                 </div>
              </div>
              <!--  -->
@@ -191,7 +87,7 @@
                    <i class="far fa-envelope"></i>
                 </div>
                 <div class="r-text">
-                   <h4> info@example.com</h4>
+                   <h4> supports@decutzshop.com</h4>
                 </div>
              </div>
              <!--  -->
@@ -201,12 +97,11 @@
              <div class="request-form-wrapper">
                 <h4>Send Your Request</h4>
                 <p>We Are Committed To Total Transparency About Our Products.</p>
-                <div class="div_line-yal">
-                   <img class="img-fluid" src="images/line-yal.png" alt="img">
-                </div>
-                <form>
+                
+                <form method="post">
+                  {% csrf_token %}
                    <div class="mb-3 icon-filed">
-                      <input type="text" class="form-control require" name="first_name" required="" placeholder="Enter Name">
+                      <input type="text" class="form-control require" name="name" required="" placeholder="Enter Name">
                       <span><i class="fa fa-user"></i></span>
                    </div>
                    <div class="mb-3 icon-filed">
@@ -214,14 +109,14 @@
                       <span><i class="fa fa-envelope"></i></span>
                    </div>
                    <div class="mb-3 icon-filed">
-                      <input type="text" class="form-control require" name="contact_no" placeholder="Enter Mob. Number">
+                      <input type="text" class="form-control require" name="phone_number" placeholder="Enter Mob. Number">
                       <span><i class="fa fa-phone"></i></span>
                    </div>
                    <div class="mb-3 icon-filed">
                       <textarea rows="3" cols="3" class="form-control require" name="message"  placeholder="Enter Message"></textarea>
                       <span><i class="fas fa-edit"></i></span>
                    </div>
-                   <button class="submitForm custom-btn">Send Now</button>
+                   <button class="submit custom-btn" type="submit" style="background-color:#6282B1;">Send Now</button>
                 </form>
                 
              </div>
